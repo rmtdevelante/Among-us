@@ -1,0 +1,37 @@
+<!DOCTYPE html><!--informa al navegador qué versión de HTML (o XML) se usó para escribir el documento.-->
+<html lang="es"><!--el atributo lang dentro de la etiqueta de html se utiliza para hacer referencia al idioa
+    en este caso estamos usando el idioma español-->
+<head><!--La etiqueda head se utiliza para contener meta datos  tales como link, title y script-->
+    <meta charset="UTF-8"><!--se usa el atributo charset="UTF-8" que sirve para especificar el conjunto 
+        de caracteres que se utilizará para interpretar el contenido del documento HTML.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--en HTML ajusta la página web 
+        para adaptarse al ancho del dispositivo y establece un nivel inicial de escala adecuado en 
+        dispositivos móviles. -->
+    <link rel="stylesheet" href="CSS/Style-A.css"><!--vincula la hoja de estilos externa que se había creado en la 
+        carpeta raíz con el nombre de CSS y de ahí al archcivo Style-A.css al documento HTML.-->
+    <title>Hay un impostor</title><!--con esta línea decimos que el titulo de la pestaña en la pagina se llamará
+        lo que está entre la etiqueta de apertura y cierre-->
+</head><!--con esta etiqueta de cierre indicamos que queremos que hasta acá queremos que sea todo el 
+    encabezado o los elementos que se ocuparán en el cuerpo-->
+<body><!--la etiqueda body se utiliza para todo el contenido visible por el usuario-->
+    <div class="impostor"><!--Creamos un contenedor y le asignamos una clase o identificador-->
+        <div class="cuerpo"><!--Se crea otro contenedor para darle estructura al personaje-->
+            <div class="llenado"></div><!--A su vez dentro de ese contenedor le damos una clase de llenado
+            para poder rellenarlo-->
+            <div class="sombra"></div><!--Aplicamos un contendor para aparentar la sombra-->
+        </div><!--Cerramos la etiqueta del contenedor cuerpo para indicar que ya no habrá más dentro de ese
+        contenedor-->
+        <div class="vidrio"><!--Creamos un contenedor para el vidrio del casco del personaje-->
+            <div class="azul"></div><!--Indicamos otro contenedor dentro del vidrio del casco y le damos 
+            una clase para identificarlo-->
+            <div class="blanco"></div><!--Hacemos otro contenedro para indicar lo mismo-->
+        </div><!--Se finaliza el vidrio del casco por lo que cerramos la etiqueta-->
+        <div class="piernas"><!--Ahora usamos otro contenedor para indicar que se necesita unas piernas-->
+            <div class="derecha"></div><!--Cremos el contenedor y para diferenciarlo indicamos que es la pierna
+            derecha con un class -->
+            <div class="izquierda"></div><!--Indicamos lo mismo para la otra pierna-->
+        </div><!--Cerramos la etiqueta de las piernas para concluir-->
+    </div><!--Cerramos la etiqueta del personaje para que no se altere nada más-->
+    <div class="base"></div><!--A petición del maestro ponemos un contendor para la ilusión de una base-->
+</body><!--En esta etiqueta indicamos que hasta aquí llegará la estructura visible de nuestra página web-->
+</html><!--En esta etiqueta indicamos que hasta aquí llegará la estructura visible de nuestra página web-->

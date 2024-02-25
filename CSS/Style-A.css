@@ -1,0 +1,150 @@
+body{/*Se utiliza el body para el formato de toda la pagina en este caso no se usa el putno puesto que no hay 
+    un class*/
+    display: flex;/*se utiliza para que podamos manipular el div a nuestro antojo*/
+    align-items: center; /*para centrar todo lo que no sea texto como los div*/
+    justify-content: center;/*nos permite definir cómo se deben alinear los elementos del contenedor flex*/
+    height: 100vh;/*establece la altura de un elemento mediante un valor numérico*/
+
+}
+.cuerpo{/*En este estilo podremos darle forma al cuerpo*/
+    position: relative;/*especifica cómo un elemento es posicionad en el documento*/
+    background-color: red;/* Es una propiedad de CSS que se utiliza 
+    para establecer el color de fondo de un elemento en este caso se indica que será Fondo rojo */
+}
+.impostor .cuerpo{/*A su vez utilizamos esta sintaxys para especificar más donde se quiere dar estilo*/
+    position: relative;/*especifica cómo un elemento es posicionad en el documento*/
+    width: 300px;/*establece el ancho de un elemento mediante un valor numérico*/
+    height: 400px;/*establece la altura de un elemento mediante un valor numérico*/
+    border-radius: 35% 45% 0 0;/*establece una forma esférica en los bordes*/
+    border: 30px solid black; /*establece de que color y el ancho de borde de un div*/
+    overflow: hidden;/*especifica si recortar contenido, dibujar barras de desplazamiento o mostrar 
+    contenido excedente en un elemento*/
+}
+.impostor .llenado{/*Idicamos que queremos alterar el contenedor llenado del contenedor impostor*/
+    position: absolute;/*especifica cómo un elemento es posicionad en el documento*/
+    width: 100px;/*establece el ancho de un elemento mediante un valor numérico*/
+    height: 100px;/*establece la altura de un elemento mediante un valor numérico*/
+    background-color: rgb(69, 4, 4);/* Es una propiedad de CSS que se utiliza 
+    para establecer el color de fondo de un elemento en este caso se indica que será un fondo de acuerdo 
+    a las coordenadas dentro de los paréntesis*/
+}
+.impostor .sombra{/*Idicamos que queremos alterar el contenedor sombra del contenedor impostor*/
+    position: absolute;/*especifica cómo un elemento es posicionad en el documento*/
+    width: 100%;/*establece el ancho de un elemento mediante un valor numérico*/
+    height: 90%;/*establece la altura de un elemento mediante un valor numérico*/
+    background-color: red;/* Es una propiedad de CSS que se utiliza 
+    para establecer el color de fondo de un elemento en este caso se indica que será Fondo rojo */
+}
+.impostor .vidrio{/*Idicamos que queremos alterar el contenedor vidrio del contenedor impostor*/
+    position: absolute;/*especifica cómo un elemento es posicionad en el documento*/
+    width: 200px;/*establece el ancho de un elemento mediante un valor numérico*/
+    height: 130px;/*establece la altura de un elemento mediante un valor numérico*/
+    background-color: blue;
+    right: 410px;/*representa todas las páginas de la derecha de un documento impreso*/
+    top: 150px;/*posición del lado superior del elemento contado desde el borde de la ventana*/
+    border: 30px solid black;/*establece de que color y el ancho de borde de un div*/
+    border-radius: 25% 45% 40% 40% / 50%;/*establece una forma esférica en los bordes*/
+    overflow: hidden;/*especifica si recortar contenido, dibujar barras de desplazamiento o mostrar contenido excedente en un elemento*/
+}
+.impostor .vidrio .azul{/*Idicamos que queremos alterar el contenedor azul del contenedor vidrio del contenedor
+    impostor*/
+    position: absolute;/*especifica cómo un elemento es posicionad en el documento*/
+    right: 0;/*representa todas las páginas de la derecha de un documento impreso*/
+    width: 90%;/*establece el ancho de un elemento mediante un valor numérico*/
+    height: 70px;/*establece la altura de un elemento mediante un valor numérico*/
+    background-color: lightblue;/*especifica cómo un elemento es posicionado en el documento*/
+    border-radius: 10% 10% 100% 100% / 100% 100% 50% 100%;/*establece una forma esférica en los bordes*/
+}
+.impostor .vidrio .blanco{/*Idicamos que queremos alterar el contenedor blanco del contenedor vidrio del contenedor
+    impostor*/
+    position: absolute;/* Posiciona la imagen de fondo */
+    top: 10px;/*Sirve para desplazar el elemento contando desde el borde superior*/
+    right: 10px;/*Esto posiciona un elemento a 10 píxeles de distancia desde el borde 
+    derecho de su contenedor más cercano.*/
+    width: 50%;/*Establece el ancho del elemento*/
+    height: 40px;/*Establece la altura del elemento*/
+    background-color: white; /* Es una propiedad de CSS que se utiliza 
+    para establecer el color de fondo de un elemento en este caso se indica que será Fondo blaco */
+    border-radius: 30% 70% 30% 30% / 30% 70% 30% 60%;/*Esto define los radios de las esquinas de un elemento, 
+    tanto horizontal como verticalmente. Cada valor corresponde a una esquina en el orden: superior izquierda, 
+    superior derecha, inferior derecha e inferior izquierda.*/
+}
+.piernas{/*Se indica que el contenedor piernas se va a estilar*/
+    display: flex;/*Esta propiedad CSS se utiliza para establecer un contenedor como un contenedor flexible, 
+    lo que significa que sus elementos hijos se pueden colocar y redimensionar automáticamente para llenar 
+    el espacio disponible.*/
+    justify-content: space-between;/*Esta regla CSS se aplica a un contenedor flexible (display: flex;)
+     y distribuye los elementos hijos a lo largo del eje principal del contenedor con espacio adicional entre ellos. 
+    Con space-between, el espacio se coloca entre los elementos, lo que resulta en que los elementos estén 
+    distribuidos un iformemente a lo largo del contenedor con el primer elemento pegado al inicio y el último 
+    elemento pegado al final.*/
+    transform: translateY(-30px);/*Esta propiedad CSS transform se utiliza para aplicar transformaciones a un 
+    elemento, como trasladarlo, rotarlo o escalarlo. En este caso, translateY(-30px) traslada verticalmente el 
+    elemento hacia arriba (-30 píxeles).*/
+}
+.impostor .piernas .izquierda{/*Idicamos que queremos alterar el contenedor izquierdo del contenedor piernas del 
+    contenedor impostor*/
+    width: 110px;/*establece el ancho de un elemento mediante un valor numérico*/
+    height: 130px;/*Establece la altura del elemento*/
+    background-color: red;/* Es una propiedad de CSS que se utiliza 
+    para establecer el color de fondo de un elemento en este caso se indica que será Fondo rojo */
+    border-left: 30px solid black;/*Esta regla CSS aplica un borde sólido de color negro con 
+    un ancho de 30 píxeles en el lado izquierdo de un elemento.*/
+    border-right: 30px solid black;/*Esta regla CSS aplica un borde sólido de color negro con 
+    un ancho de 30 píxeles en el lado derecho de un elemento.*/
+    border-bottom: 30px solid black;/*Esta regla CSS aplica un borde sólido de color negro 
+    con un ancho de 30 píxeles en la parte inferior de un elemento.*/
+    border-radius: 0 0 40% 40%;/*Esta regla CSS establece los radios de las esquinas de un elemento. 
+    Los valores proporcionados son para las esquinas en el siguiente orden: superior izquierda, superior 
+    derecha, inferior derecha e inferior izquierda. En este caso, las esquinas inferiores tienen un radio del 40%, 
+    mientras que las esquinas superiores permanecen con un radio de 0, lo que resulta en una apariencia de esquinas 
+    curvas solo en la parte inferior del elemento.*/
+}
+.impostor .piernas .derecha{/*Idicamos que queremos alterar el contenedor derecho del contenedor piernas del 
+    contenedor impostor*/
+    width: 110px;/*establece el ancho de un elemento mediante un valor numérico*/
+    height: 130px;/*Establece la altura del elemento*/
+    background-color: red;/* Es una propiedad de CSS que se utiliza 
+    para establecer el color de fondo de un elemento en este caso se indica que será Fondo rojo */
+    border-left: 30px solid black;/*Esta regla CSS aplica un borde sólido de color negro con 
+    un ancho de 30 píxeles en el lado izquierdo de un elemento.*/
+    border-right: 30px solid black;/*Esta regla CSS aplica un borde sólido de color negro con 
+    un ancho de 30 píxeles en el lado derecho de un elemento.*/
+    border-bottom: 30px solid black;/*Esta regla CSS aplica un borde sólido de color negro 
+    con un ancho de 30 píxeles en la parte inferior de un elemento.*/
+    border-radius: 0 0 40% 40%;/*Esta regla CSS establece los radios de las esquinas de un elemento. 
+    Los valores proporcionados son para las esquinas en el siguiente orden: superior izquierda, superior 
+    derecha, inferior derecha e inferior izquierda. En este caso, las esquinas inferiores tienen un radio del 40%, 
+    mientras que las esquinas superiores permanecen con un radio de 0, lo que resulta en una apariencia de esquinas 
+    curvas solo en la parte inferior del elemento.*/
+}
+.base{/*Por último le damos el estilo a la base para nuestro personaje*/
+    width: 400px;/*establece el ancho de un elemento mediante un valor numérico*/
+    height: 0px;/*Establece la altura del elemento*/
+    border-right: 60px solid transparent;/*Esta regla CSS aplica un borde sólido 
+    transparente con un ancho de 60 píxeles en el lado derecho de un elemento.*/
+    border-left: 60px solid transparent;/*Esta regla CSS aplica un borde sólido 
+    transparente con un ancho de 60 píxeles en el lado izquierdo de un elemento.*/
+    border-bottom: 100px solid #428bca;/*Esta regla CSS aplica un borde sólido 
+    con un ancho de 100 píxeles y color #428bca en la parte inferior de un elemento.*/
+    border-top: 40px solid transparent;/*Esta regla CSS aplica un borde sólido 
+    transparente con un ancho de 40 píxeles en la parte superior de un elemento.*/
+    position: absolute;/*Esta propiedad CSS se utiliza para posicionar un elemento de forma absoluta con respecto 
+    a su contenedor posicionado más cercano, ignorando el flujo normal del documento. Esto significa que el elemento
+    se posicionará con respecto a las coordenadas especificadas, en lugar de su posición relativa al flujo de la 
+    página.*/
+    bottom: 5px; /*Esta regla CSS posiciona un elemento absolutamente 5 píxeles desde la parte inferior de su 
+    contenedor más cercano. Si el contenedor no tiene una posición definida, se posicionará en relación con el
+     borde inferior del viewport del navegador.*/
+    left: 50%; /*Esta regla CSS posiciona un elemento absolutamente de manera que el borde izquierdo del elemento 
+    esté alineado con el 50% del ancho del contenedor padre más cercano. Esto efectivamente lo coloca en el centro 
+    horizontal del contenedor.*/
+    transform: translateX(-50%); /*Esta propiedad CSS transform se utiliza para aplicar una transformación de 
+    traslación horizontal a un elemento. translateX(-50%) mueve el elemento -50% de su propio ancho hacia la 
+    izquierda. En combinación con left: 50%;, esto efectivamente centra horizontalmente el elemento dentro de su 
+    contenedor padre.*/
+    z-index: -1;/*Esta regla CSS establece el valor de z-index del elemento en -1. El z-index determina el orden 
+    de apilamiento de los elementos en la página. Un valor negativo como -1 coloca el elemento detrás de otros 
+    elementos que tienen un z-index igual o mayor. En otras palabras, el elemento se colocará detrás del contenido 
+    que tenga un z-index mayor o igual a cero.*/
+}
